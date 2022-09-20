@@ -4,13 +4,13 @@
 
 Number and name of feature: 01; Initial
 
-Estimate of time needed to complete: 6 hours
+Estimate of time needed to complete: 3 hours
 
-Start time: 12:00pm
+Start time: 4:00pm
 
 Finish time: 6:00pm
 
-Actual time needed to complete: 6 hours
+Actual time needed to complete: 2 hours
 
 # Resources:
 worked with Daniel , Adam, Keelen

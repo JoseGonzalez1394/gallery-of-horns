@@ -27,10 +27,10 @@ Estimate of time needed to complete: 2 hours
 
 Start time: 10:40am
 
-Finish time: 
+Finish time: 12:45am
 
-Actual time needed to complete: _____
+Actual time needed to complete: 2 hours 10 minutes
 
 # Resources:
 
-worked with TA
+worked with TA, Instructor, Chris, Jullian

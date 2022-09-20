@@ -15,6 +15,8 @@ class Main extends React.Component {
         description = {value.description}
         keyword = {value.keyword}
         horns = {value.horns}
+        favorites = {`Favorites: `}
+        key = {value._id}
         />
       ))}
       </>

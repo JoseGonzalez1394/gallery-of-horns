@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 
+
 class HornedBeast extends React.Component {
   constructor(props) {
     super(props);
@@ -16,10 +17,11 @@ class HornedBeast extends React.Component {
   }
 
   render() {
+
     return (
       < div className="HornedBeast">
-        <Card style={{ width: "18rem" }} className="mx-auto my-5 border border-primaryd-flex flex-wrap justify-content-center">
-          <Card.Img variant="bottom" src={this.props.image_url} />
+        <Card style={{ width: "18rem" }} className="mx-auto my-5 h-100 mx-auto px-1">
+          <Card.Img onClick={this.props.selectBeast} className='py-1 h-50 m-auto' variant="bottom" src={this.props.image_url} />
           <Card.Body className="bg-info text-dark">
             <Card.Title className="fw-bold text-center" >{this.props.title}</Card.Title>
             <Card.Text className="fw-bold text-center">{this.props.description}</Card.Text>
@@ -29,6 +31,7 @@ class HornedBeast extends React.Component {
             <Button className="fw-bold text-center position-relative top-100 start-50 translate-middle mt-1 bi bi-caret-down-fill bg-warning text-dark" variant="primary" onClick={this.handleClick}>Vote</Button>
           </Card.Body>
         </Card>
+
       </div>
     )
   };

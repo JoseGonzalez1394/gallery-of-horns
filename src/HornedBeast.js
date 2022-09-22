@@ -18,7 +18,7 @@ class HornedBeast extends React.Component {
   render() {
     return (
       < div className="HornedBeast">
-        <Card style={{ width: "18rem" }} className="mx-auto my-5 border border-primary">
+        <Card style={{ width: "18rem" }} className="mx-auto my-5 border border-primaryd-flex flex-wrap justify-content-center">
           <Card.Img variant="bottom" src={this.props.image_url} />
           <Card.Body className="bg-info text-dark">
             <Card.Title className="fw-bold text-center" >{this.props.title}</Card.Title>

@@ -4,8 +4,17 @@ import HornedBeast from "./HornedBeast";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-class Main extends React.Component {
+import Button from "react-bootstrap/Button";
+import Modal from "react-bootstrap/Modal";
 
+class Main extends React.Component {
+  constructor(props) {
+    super(props); 
+    this.state = {
+
+    }
+  } 
+  
   render() {
     return (
       <>

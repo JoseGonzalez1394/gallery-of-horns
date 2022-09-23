@@ -28,7 +28,7 @@ class HornedBeast extends React.Component {
             <Card.Text className="fw-bold text-center">{this.props.keyword}</Card.Text>
             <Card.Text className="fw-bold text-center">{this.props.horns} </Card.Text>
             <Card.Text className="fw-bold text-center">{this.state.favorites}</Card.Text>
-            <Button className="fw-bold text-center position-relative top-100 start-50 translate-middle mt-1 bi bi-caret-down-fill bg-warning text-dark" variant="primary" onClick={this.handleClick}>Vote</Button>
+            <Button className="fw-bold text-center position-relative top-100 start-50 translate-middle mt-1 bi bi-caret-down-fill text-dark" variant="primary" onClick={this.handleClick}>Vote</Button>
           </Card.Body>
         </Card>
 

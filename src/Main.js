@@ -14,6 +14,8 @@ class Main extends React.Component {
     this.state = {
       showModel: false,
       displayBeast: {},
+      filteredBeast: HornedBeast,
+      BeastData: Data,
     }
   }
 
@@ -24,15 +26,26 @@ class Main extends React.Component {
     this.handleShow();
   }
 
+  filteredHorn = (valueofHorns) => {
+    if (valueofHorns === "default") {
+      this.setState({ BeastData: Data });
+    } else {
+      let filteredHorn = Data.filter(value =>
+        value.horns === parseInt(valueofHorns));
+      console.log(filteredHorn);
+      this.setState({ BeastData: filteredHorn });
+    }
+  }
+
   render() {
     return (
       <>
-        <p className="fw-bold text-center border border-info .bg-secondary p-3 mb-2 bg-primary text-dark">Please Click on Your Favorite Horned Beast! </p>
-        <FormBar />
+        <p className="fw-bold text-center border border-info .bg-secondary p-3 mb-2 bg-primary text-dark">Please Click on Your Favorite Horned Beast to Vote! </p>
+        <FormBar filteredHorn={this.filteredHorn} />
         <div className="d-flex flex-wrap justify-content-center bg-secondary" >
           <Container>
             <Row>
-              {Data.map((objectBeast, index) => (
+              {this.state.BeastData.map((objectBeast, index) => (
                 <Col key={index} sm>
                   <HornedBeast
                     _id={objectBeast._id}
